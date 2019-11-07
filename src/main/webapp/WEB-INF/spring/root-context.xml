@@ -4,5 +4,64 @@
 	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans.xsd">
 	
 	<!-- Root Context: defines shared resources visible to all other web components -->
+	
+	<!-- Wheel, Engine
+	<bean class="com.arc.s2.Wheel" id="wheel" lazy-init="false">
+		Constructor 호출
+		name으로~
+		<constructor-arg name="brand" value="Kumho"></constructor-arg>
+		<constructor-arg name="size" value="20"></constructor-arg>
 		
+		index로~
+		<constructor-arg index="0" value="Kumho"></constructor-arg>
+		<constructor-arg index="1" value="20"></constructor-arg>
+		
+		type으로~
+		<constructor-arg type="java.lang.String" value="Kumho"></constructor-arg>
+		<constructor-arg type="java.lang.Integer" value="20"></constructor-arg>
+		
+		setter 호출
+		<property name="brand" value="Hankook"></property>
+		<property name="size" value="20"></property>
+	</bean>
+	
+	<bean class="com.arc.s2.Wheel" id="wheel2"> id만 다르게
+		setter 호출
+		<property name="brand" value="Kumho"></property>
+		<property name="size" value="20"></property>
+	</bean>
+	
+	<bean class="com.arc.s2.Engine" id="engine">
+		<property name="fuel" value="gasoline"></property>
+		<property name="hp" value="500"></property>
+	</bean>
+	
+	Car car = new Car()
+	<bean class="com.arc.s2.Car" id="car">
+		<property name="wheel" ref="wheel"></property>
+		<property name="engine" ref="engine"></property>
+		
+		<property name="price">
+			<map>
+				<entry>
+					<key>p1</key>
+					<value>200</value>
+				</entry>
+				<entry>
+					<key>p2</key>
+					<value>300</value>
+					<ref bean=""/>
+				</entry>
+			</map>
+		</property>
+		
+		<property name="name"> ArrayList
+			<list>
+				<value>iu</value>
+				<value>suji</value>
+				<ref bean=""/>
+			</list>
+		</property>
+	</bean>	 -->
+	
 </beans>
