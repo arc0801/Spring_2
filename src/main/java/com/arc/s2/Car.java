@@ -3,6 +3,9 @@ package com.arc.s2;
 import java.util.ArrayList;
 import java.util.HashMap;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -12,6 +15,16 @@ public class Car {
 	private Wheel wheel;
 	private ArrayList<String> name;
 	private HashMap<String, Integer> price;
+	
+	@PostConstruct
+	public void init() {
+		
+	}
+	
+	@PreDestroy
+	public void destroy() {
+		
+	}
 	
 	public Car() {
 		// TODO Auto-generated constructor stub
